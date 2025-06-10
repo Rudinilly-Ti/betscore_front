@@ -64,7 +64,7 @@ export default {
   },
   mounted() {
     axios
-      .get('http://127.0.0.1:8000/api/classificacao/')
+      .get('https://betscore-back.onrender.com/api/classificacao/')
       .then((response) => {
         console.log('Dados recebidos:', response.data);
         this.times = response.data || {}; // Verifica se a resposta contém os dados esperados

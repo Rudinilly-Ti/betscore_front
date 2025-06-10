@@ -57,7 +57,7 @@ export default {
   },
   mounted() {
        axios
-      .get('http://127.0.0.1:8000/api/partidas/') // Endpoint correto
+      .get('https://betscore-back.onrender.com/api/partidas/') // Endpoint correto
       .then((response) => {
         this.partidas = response.data.data || [];
         console.log('Partidas:', this.partidas); // Debug de dados

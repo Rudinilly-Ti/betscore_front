@@ -20,7 +20,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:8000', // URL do backend local
+        target: 'https://betscore-back.onrender.com', // URL do backend local
         changeOrigin: true,
       },
     },

@@ -81,7 +81,7 @@ library.add(faChevronLeft, faChevronRight)
     },
     mounted() {
       axios
-        .get('http://127.0.0.1:8000/api/agenda/time/' + this.$route.params.id)
+        .get('https://betscore-back.onrender.com/api/agenda/time/' + this.$route.params.id)
         .then((response) => {
           console.log('Dados recebidos:', response.data);
           this.partidas = response.data || []; // Verifica se a resposta contém os dados esperados

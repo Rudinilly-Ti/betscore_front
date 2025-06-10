@@ -251,7 +251,7 @@ export default {
   methods: {
     async fetchPartidas() {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/partidas-ao-vivo/'); // Endpoint do backend
+        const response = await axios.get('https://betscore-back.onrender.com/api/partidas-ao-vivo/'); // Endpoint do backend
         const events = response.data?.events?.sort((a, b) => a.sort_order - b.sort_order)
         const groupedEvents = [];
         // Agrupa os eventos por participante
